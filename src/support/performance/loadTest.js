@@ -27,7 +27,7 @@ export let options = {
 // Default function executed by each virtual user, performing the main HTTP request and checks
 export default function () {
   // Send a GET request to the specified endpoint
-  const res = http.get("https://jsonplaceholder.typicode.com/posts");
+  const res = http.get("https://qa.in-house.com/");
 
   // Validate the response status and timing with checks
   const resultCheck = check(res, {

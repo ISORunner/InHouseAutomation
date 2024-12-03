@@ -7,9 +7,9 @@ Feature: Validate Figma Design
     Scenario: Compare web page appearance with Figma design
         Given the Figma design for "search" is available
         When I load the "https://qa.in-house.com/houses" in the browser
-        Then the visual appearance should match the Figma design with a tolerance of 5%
+        Then the visual appearance should match the Figma design with a tolerance of 1%
 
     Scenario: Compare mobile web page appearance with Figma design
         Given the Figma design for "searchMobile" is available
         When I load the "https://qa.in-house.com/houses" in the mobile browser with a viewport size of 375x812
-        Then the visual appearance should match the Figma design with a tolerance of 5%
+        Then the visual appearance should match the Figma design with a tolerance of 1%
